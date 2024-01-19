@@ -69,6 +69,54 @@ async def integration_help(ctx):
     await ctx.send(embed=embed)
     logging.info("[32mSent the embed.[0m")
 
+@bot.command(name="claimdm",description="Claims the role of \"DM\" from the active DM.")
+async def claim_dm(ctx):
+    logging.info(f"[93m{ctx.author} [0missued: [36mclaim_dm[0m")
+
+    await ctx.message.delete()  # Clear the issuing command
+    logging.info("[32mDeleted issuing command.[0m")
+
+    # Establish objects
+    dm_role = discord.utils.get(ctx.guild.roles, name="DM")
+    player_role = discord.utils.get(ctx.guild.roles, name="Player")
+    
+    claiming_user = ctx.author
+    current_dm = discord.utils.get(ctx.guild.members, roles=[dm_role])
+    logging.info(
+        "[32mGrabbed role info:\n"
+        f"    [0mclaiming_user: [93m{claiming_user}"
+        f"    [0mcurrent_dm: [93m{current_dm}[0m"
+    )
+    
+    # Check DM status
+    if dm_role in claiming_user.roles:
+        message = await ctx.channel.send("You already have the \"DM\" role.")
+        logging.error(
+            "[31mAborted: claim_dm;\n"
+            f"    [93m{ctx.author} [31malready is DM.[0m"
+        )
+        async with ctx.typing():
+            await asyncio.sleep(4)
+            await message.delete()
+        return
+    
+    # Make the switch
+    if current_dm:
+        await current_dm.remove_roles(dm_role)
+        logging.info("[32mRemoved current_dm \"DM\" role.[0m")
+        await current_dm.add_roles(player_role)
+        logging.info("[32mGave current_dm \"Player\" role.[0m")
+
+    await claiming_user.remove_roles(player_role)
+    logging.info("[32mRemoved claiming_user \"Player\" role.[0m")
+    await claiming_user.add_roles(dm_role)
+    logging.info("[32mGave claiming_user \"DM\" role.[0m")
+
+    message = await ctx.send("You are now the DM.")
+    async with ctx.typing():
+        await asyncio.sleep(4)
+        await message.delete()
+
 @bot.command(name="dnd",description="Starts a thread intended for D&D. Helps keep the server tidy.")
 async def dnd_thread(ctx,*args):
     logging.info(f"[93m{ctx.author} [0missued: [36mdnd[0m")
@@ -200,54 +248,6 @@ async def dnd_rename(ctx,*args):
         await asyncio.sleep(4)
         await message.delete()
         logging.info("[32mServed success message.[0m")
-
-@bot.command(name="claimdm",description="Claims the role of \"DM\" from the active DM.")
-async def claim_dm(ctx):
-    logging.info(f"[93m{ctx.author} [0missued: [36mclaim_dm[0m")
-
-    await ctx.message.delete()  # Clear the issuing command
-    logging.info("[32mDeleted issuing command.[0m")
-
-    # Establish objects
-    dm_role = discord.utils.get(ctx.guild.roles, name="DM")
-    player_role = discord.utils.get(ctx.guild.roles, name="Player")
-    
-    claiming_user = ctx.author
-    current_dm = discord.utils.get(ctx.guild.members, roles=[dm_role])
-    logging.info(
-        "[32mGrabbed role info:\n"
-        f"    [0mclaiming_user: [93m{claiming_user}"
-        f"    [0mcurrent_dm: [93m{current_dm}[0m"
-    )
-    
-    # Check DM status
-    if dm_role in claiming_user.roles:
-        message = await ctx.channel.send("You already have the \"DM\" role.")
-        logging.error(
-            "[31mAborted: claim_dm;\n"
-            f"    [93m{ctx.author} [31malready is DM.[0m"
-        )
-        async with ctx.typing():
-            await asyncio.sleep(4)
-            await message.delete()
-        return
-    
-    # Make the switch
-    if current_dm:
-        await current_dm.remove_roles(dm_role)
-        logging.info("[32mRemoved current_dm \"DM\" role.[0m")
-        await current_dm.add_roles(player_role)
-        logging.info("[32mGave current_dm \"Player\" role.[0m")
-
-    await claiming_user.remove_roles(player_role)
-    logging.info("[32mRemoved claiming_user \"Player\" role.[0m")
-    await claiming_user.add_roles(dm_role)
-    logging.info("[32mGave claiming_user \"DM\" role.[0m")
-
-    message = await ctx.send("You are now the DM.")
-    async with ctx.typing():
-        await asyncio.sleep(4)
-        await message.delete()
 
 @bot.command(name="undm",description="Returns the current DM to the role of \"Player\".")
 async def unclaim_dm(ctx):

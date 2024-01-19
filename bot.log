@@ -1,710 +1,466 @@
-2024-01-19 07:28:00,016 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:28:00,017 [INFO]: logging in using static token
-2024-01-19 07:28:00,961 [INFO]: Shard ID None has connected to Gateway (Session ID: 23211616bcffa18894c47ce45735f0fb).
-2024-01-19 07:28:02,981 [INFO]: 
+2024-01-19 10:13:13,083 [WARNING]: PyNaCl is not installed, voice will NOT be supported
+2024-01-19 10:13:13,084 [INFO]: logging in using static token
+2024-01-19 10:13:13,904 [INFO]: Shard ID None has connected to Gateway (Session ID: 08b281df8077760a4dea2262a5f9cc46).
+2024-01-19 10:13:15,912 [INFO]: 
 
 
-2024-01-19 07:28:02,981 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
+2024-01-19 10:13:15,912 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
     [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:28:02,982 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:28:02,982 [INFO]: [32mReady.[0m
-2024-01-19 07:28:20,578 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:28:20,869 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:28:20,869 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:28:21,230 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:28:21,231 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:28:21,403 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 07:28:21,560 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 07:28:28,689 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 07:28:28,983 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:28:28,983 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 07:28:29,181 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 07:28:29,417 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 07:33:53,878 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:33:53,879 [INFO]: logging in using static token
-2024-01-19 07:33:54,680 [INFO]: Shard ID None has connected to Gateway (Session ID: 594b1ed9f8a25b9c4d8b8cf1f13bbb53).
-2024-01-19 07:33:56,685 [INFO]: 
+2024-01-19 10:13:15,913 [INFO]: [32mChanged bot presence.[0m
+2024-01-19 10:13:15,913 [INFO]: [32mReady.[0m
+2024-01-19 10:27:10,748 [WARNING]: Can't keep up, shard ID None websocket is 12.0s behind.
+2024-01-19 10:28:11,341 [INFO]: Shard ID None has successfully RESUMED session 08b281df8077760a4dea2262a5f9cc46.
+2024-01-19 11:16:53,913 [INFO]: Shard ID None has successfully RESUMED session 08b281df8077760a4dea2262a5f9cc46.
+2024-01-19 11:43:25,183 [INFO]: Shard ID None has successfully RESUMED session 08b281df8077760a4dea2262a5f9cc46.
+2024-01-19 11:45:01,672 [ERROR]: Attempting a reconnect in 1.43s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-01-19 11:45:23,126 [ERROR]: Attempting a reconnect in 3.60s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:45:46,761 [ERROR]: Attempting a reconnect in 7.78s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:46:14,577 [ERROR]: Attempting a reconnect in 0.56s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:47:15,180 [ERROR]: Attempting a reconnect in 2.52s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1204, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 992, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 1126, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 1159, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 509, in wait_for
+    async with timeouts.timeout(timeout):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/timeouts.py", line 111, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+2024-01-19 11:47:37,724 [ERROR]: Attempting a reconnect in 14.98s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:48:12,741 [ERROR]: Attempting a reconnect in 87.57s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:50:00,413 [ERROR]: Attempting a reconnect in 60.38s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/base_events.py", line 878, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/asyncio/tasks.py", line 510, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 825, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/client.py", line 574, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 544, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 911, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2024-01-19 11:51:04,422 [INFO]: Shard ID None session has been invalidated.
+2024-01-19 11:51:41,902 [INFO]: Shard ID None has connected to Gateway (Session ID: 6bc6ee3a4f04a48d59da9451b7b146fd).
+2024-01-19 11:51:43,944 [INFO]: 
 
 
-2024-01-19 07:33:56,685 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
+2024-01-19 11:51:43,945 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
     [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:33:56,685 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:33:56,686 [INFO]: [32mReady.[0m
-2024-01-19 07:33:59,590 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:33:59,901 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:33:59,902 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:34:00,072 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 07:34:00,466 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 07:34:10,847 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:34:11,194 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:34:11,195 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:34:26,655 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:34:26,963 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:34:26,964 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:35:03,906 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:35:03,907 [INFO]: logging in using static token
-2024-01-19 07:35:04,811 [INFO]: Shard ID None has connected to Gateway (Session ID: b5dc07133cfe2b86c687d66d5613a9fb).
-2024-01-19 07:35:06,829 [INFO]: 
+2024-01-19 11:51:43,948 [INFO]: [32mChanged bot presence.[0m
+2024-01-19 11:51:43,948 [INFO]: [32mReady.[0m
+2024-01-19 11:52:39,639 [WARNING]: Can't keep up, shard ID None websocket is 12.4s behind.
+2024-01-19 11:54:45,984 [ERROR]: Attempting a reconnect in 481.45s
+Traceback (most recent call last):
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/jacobr/miniconda3/envs/AvraeIntegration/lib/python3.12/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-01-19 12:02:47,926 [INFO]: Shard ID None session has been invalidated.
+2024-01-19 12:02:53,433 [INFO]: Shard ID None has connected to Gateway (Session ID: 48138d1934c432f37c0213d3d8fdb241).
+2024-01-19 12:02:55,440 [INFO]: 
 
 
-2024-01-19 07:35:06,829 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
+2024-01-19 12:02:55,441 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
     [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:35:06,830 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:35:06,830 [INFO]: [32mReady.[0m
-2024-01-19 07:35:09,310 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:35:09,554 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:35:09,554 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:35:54,320 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:35:54,322 [INFO]: logging in using static token
-2024-01-19 07:35:55,047 [INFO]: Shard ID None has connected to Gateway (Session ID: a10b674d4d6cf68faf2d8a6497d851e9).
-2024-01-19 07:35:57,058 [INFO]: 
-
-
-2024-01-19 07:35:57,059 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:35:57,059 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:35:57,059 [INFO]: [32mReady.[0m
-2024-01-19 07:36:02,260 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:36:02,565 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:36:02,566 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:37:19,036 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:37:19,037 [INFO]: logging in using static token
-2024-01-19 07:37:20,025 [INFO]: Shard ID None has connected to Gateway (Session ID: 2a345323408b69b7d99c88bd8536614b).
-2024-01-19 07:37:22,032 [INFO]: 
-
-
-2024-01-19 07:37:22,032 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:37:22,032 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:37:22,032 [INFO]: [32mReady.[0m
-2024-01-19 07:37:25,387 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:37:25,641 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:37:25,642 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:37:25,823 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:37:25,824 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:37:25,994 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 07:37:26,152 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 07:38:06,234 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:38:06,235 [INFO]: logging in using static token
-2024-01-19 07:38:07,067 [INFO]: Shard ID None has connected to Gateway (Session ID: 829371d246d2b272908d2d815e722a89).
-2024-01-19 07:38:09,071 [INFO]: 
-
-
-2024-01-19 07:38:09,072 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:38:09,072 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:38:09,072 [INFO]: [32mReady.[0m
-2024-01-19 07:38:12,406 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:38:12,621 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:38:12,621 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:38:12,968 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:38:12,969 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:38:34,360 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:38:34,362 [INFO]: logging in using static token
-2024-01-19 07:38:35,201 [INFO]: Shard ID None has connected to Gateway (Session ID: c06f9e003912ca267b9ccbeaca950019).
-2024-01-19 07:38:37,205 [INFO]: 
-
-
-2024-01-19 07:38:37,205 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:38:37,206 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:38:37,206 [INFO]: [32mReady.[0m
-2024-01-19 07:38:38,315 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:38:38,581 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:38:38,582 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:38:38,786 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:38:38,786 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:39:49,423 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:39:49,424 [INFO]: logging in using static token
-2024-01-19 07:39:50,120 [INFO]: Shard ID None has connected to Gateway (Session ID: ab6c381ea5dcbed9f261bafd2e897969).
-2024-01-19 07:39:52,123 [INFO]: 
-
-
-2024-01-19 07:39:52,124 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:39:52,124 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:39:52,124 [INFO]: [32mReady.[0m
-2024-01-19 07:39:54,529 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:39:54,743 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:39:54,743 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:39:54,970 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:39:54,971 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:41:05,980 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:41:05,981 [INFO]: logging in using static token
-2024-01-19 07:41:06,880 [INFO]: Shard ID None has connected to Gateway (Session ID: efb972185ecbd192b7262d0a1f48a61d).
-2024-01-19 07:41:08,885 [INFO]: 
-
-
-2024-01-19 07:41:08,885 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:41:08,886 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:41:08,886 [INFO]: [32mReady.[0m
-2024-01-19 07:41:11,003 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 07:41:11,243 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:41:11,243 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 07:41:11,448 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 07:41:11,635 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 07:41:15,399 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 07:41:15,679 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:41:15,680 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[][0m
-2024-01-19 07:41:16,000 [INFO]: [31mAborted: un_dm;
-    [93mdiabolicalgolem [31mis not DM.[0m
-2024-01-19 07:41:16,000 [ERROR]: The unclaiming_user must be the same as the DM.
-2024-01-19 07:43:24,057 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:43:24,058 [INFO]: logging in using static token
-2024-01-19 07:43:24,876 [INFO]: Shard ID None has connected to Gateway (Session ID: 7f87b3b9540550a6981461fcbd6b90e1).
-2024-01-19 07:43:26,879 [INFO]: 
-
-
-2024-01-19 07:43:26,880 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:43:26,880 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:43:26,881 [INFO]: [32mReady.[0m
-2024-01-19 07:43:32,731 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:43:32,969 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:43:32,969 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:43:33,237 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 07:43:33,417 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 07:45:14,053 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:45:14,054 [INFO]: logging in using static token
-2024-01-19 07:45:14,899 [INFO]: Shard ID None has connected to Gateway (Session ID: 13b499d7eae08c64e94e5ff4a65906e8).
-2024-01-19 07:45:16,906 [INFO]: 
-
-
-2024-01-19 07:45:16,906 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:45:16,907 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:45:16,907 [INFO]: [32mReady.[0m
-2024-01-19 07:45:18,109 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 07:45:18,347 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:45:18,347 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 07:45:18,636 [INFO]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 07:45:18,636 [ERROR]: The claiming_user cannot be the same as the current_dm.
-2024-01-19 07:45:26,805 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 07:45:26,997 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:45:26,997 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 07:45:27,157 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 07:45:27,340 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 07:45:42,156 [INFO]: [93mdiabolicalgolem[0m issued: [36mintegrationhelp[0m
-2024-01-19 07:45:42,435 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:45:42,654 [INFO]: [32mSent the embed.[0m
-2024-01-19 07:49:43,842 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:49:43,843 [INFO]: logging in using static token
-2024-01-19 07:49:46,334 [INFO]: Shard ID None has connected to Gateway (Session ID: 7ecf4c8029ab5633b6802dfd812ecc1f).
-2024-01-19 07:49:48,338 [INFO]: 
-
-
-2024-01-19 07:49:48,339 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:49:48,339 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:49:48,339 [INFO]: [32mReady.[0m
-2024-01-19 07:50:40,198 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:50:40,199 [INFO]: logging in using static token
-2024-01-19 07:50:41,029 [INFO]: Shard ID None has connected to Gateway (Session ID: bd1eb5e82a72d078a851e333ca95dfe7).
-2024-01-19 07:50:43,039 [INFO]: 
-
-
-2024-01-19 07:50:43,040 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:50:43,041 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:50:43,041 [INFO]: [32mReady.[0m
-2024-01-19 07:51:08,905 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 07:51:09,259 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:51:09,697 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197725433068781598[0m, mmessage_id:1197902231140319263[0m
-2024-01-19 07:51:10,074 [INFO]: [32mDeleted thread.[0m
-2024-01-19 07:51:10,678 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 07:51:13,261 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 07:51:13,469 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:51:13,470 [INFO]: [32mGrabbed author's name:
+2024-01-19 12:02:55,441 [INFO]: [32mChanged bot presence.[0m
+2024-01-19 12:02:55,441 [INFO]: [32mReady.[0m
+2024-01-19 12:19:38,036 [WARNING]: Can't keep up, shard ID None websocket is 19.8s behind.
+2024-01-19 12:43:41,274 [INFO]: Shard ID None has successfully RESUMED session 48138d1934c432f37c0213d3d8fdb241.
+2024-01-19 12:45:41,447 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
+2024-01-19 12:45:41,814 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:45:41,814 [INFO]: [32mGrabbed author's name:
     [93mDiabolicalGolem[0m
-2024-01-19 07:51:13,470 [INFO]: [32mFound channel path:
-    [93mdnd-bot[0m
-2024-01-19 07:51:13,745 [INFO]: [32mSent anchoring message:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 07:51:14,059 [INFO]: [32mSet thread title:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 07:51:14,286 [INFO]: [32mSent welcome text.[0m
-2024-01-19 07:51:21,477 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 07:51:21,900 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:51:21,900 [INFO]: [32mGrabbed author's name:
-    [93mDiabolicalGolem[0m
-2024-01-19 07:51:22,102 [INFO]: [32mFound channel path:
-    [93mdnd-bot[0m
-2024-01-19 07:51:22,317 [INFO]: [32mSent anchoring message:
-    [93mWeee![0m
-2024-01-19 07:51:22,693 [INFO]: [32mSet thread title:
-    [93mWeee![0m
-2024-01-19 07:51:22,919 [INFO]: [32mSent welcome text.[0m
-2024-01-19 07:51:28,542 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 07:51:28,808 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 07:51:29,160 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197725433068781598[0m, mmessage_id:1197916216455602259[0m
-2024-01-19 07:51:29,385 [INFO]: [32mDeleted thread.[0m
-2024-01-19 07:51:29,648 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 07:52:03,554 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:52:03,556 [INFO]: logging in using static token
-2024-01-19 07:52:04,500 [INFO]: Shard ID None has connected to Gateway (Session ID: 6035e8d37bb4932d46ac5dbe66a00a62).
-2024-01-19 07:52:06,504 [INFO]: 
-
-
-2024-01-19 07:52:06,504 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:52:06,505 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:52:06,505 [INFO]: [32mReady.[0m
-2024-01-19 07:52:28,840 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:52:28,842 [INFO]: logging in using static token
-2024-01-19 07:52:29,791 [INFO]: Shard ID None has connected to Gateway (Session ID: 8df68321426a2bece42923e5efbe60bb).
-2024-01-19 07:52:31,796 [INFO]: 
-
-
-2024-01-19 07:52:31,796 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:52:31,797 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:52:31,797 [INFO]: [32mReady.[0m
-2024-01-19 07:54:09,563 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:54:09,565 [INFO]: logging in using static token
-2024-01-19 07:54:10,326 [INFO]: Shard ID None has connected to Gateway (Session ID: ef72fe1d80f80af09ae6abe45a602900).
-2024-01-19 07:54:12,328 [INFO]: 
-
-
-2024-01-19 07:54:12,328 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:54:12,330 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:54:12,330 [INFO]: [32mReady.[0m
-2024-01-19 07:55:18,018 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:55:18,019 [INFO]: logging in using static token
-2024-01-19 07:55:19,175 [INFO]: Shard ID None has connected to Gateway (Session ID: 9e91ff6bbd072dca77cd25727d54c0b0).
-2024-01-19 07:55:21,178 [INFO]: 
-
-
-2024-01-19 07:55:21,178 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:55:21,179 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:55:21,179 [INFO]: [32mReady.[0m
-2024-01-19 07:56:18,518 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:56:18,519 [INFO]: logging in using static token
-2024-01-19 07:56:19,290 [INFO]: Shard ID None has connected to Gateway (Session ID: 314f0cc10f1642909b5d0271e6aaff63).
-2024-01-19 07:56:21,292 [INFO]: 
-
-
-2024-01-19 07:56:21,293 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:56:21,293 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:56:21,293 [INFO]: [32mReady.[0m
-2024-01-19 07:56:54,002 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:56:54,003 [INFO]: logging in using static token
-2024-01-19 07:56:54,961 [INFO]: Shard ID None has connected to Gateway (Session ID: 4c567ebd2442ae1543c6f29f12df6260).
-2024-01-19 07:56:56,964 [INFO]: 
-
-
-2024-01-19 07:56:56,964 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:56:56,965 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:56:56,965 [INFO]: [32mReady.[0m
-2024-01-19 07:58:10,396 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:58:10,397 [INFO]: logging in using static token
-2024-01-19 07:58:11,154 [INFO]: Shard ID None has connected to Gateway (Session ID: f9ceedb53789c75619f1ad481ad5e34e).
-2024-01-19 07:58:13,161 [INFO]: 
-
-
-2024-01-19 07:58:13,162 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:58:13,162 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:58:13,162 [INFO]: [32mReady.[0m
-2024-01-19 07:58:46,678 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 07:58:46,679 [INFO]: logging in using static token
-2024-01-19 07:58:47,672 [INFO]: Shard ID None has connected to Gateway (Session ID: c13f5db697f1c06f48a1ed57c611625c).
-2024-01-19 07:58:49,683 [INFO]: 
-
-
-2024-01-19 07:58:49,683 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 07:58:49,684 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 07:58:49,684 [INFO]: [32mReady.[0m
-2024-01-19 08:01:11,773 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:01:11,774 [INFO]: logging in using static token
-2024-01-19 08:01:12,693 [INFO]: Shard ID None has connected to Gateway (Session ID: 6ebfc37c60dc55e1e0629333091ce852).
-2024-01-19 08:01:14,700 [INFO]: 
-
-
-2024-01-19 08:01:14,700 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:01:14,701 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:01:14,701 [INFO]: [32mReady.[0m
-2024-01-19 08:01:15,759 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:01:16,023 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:01:16,735 [INFO]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:02:21,978 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:02:21,979 [INFO]: logging in using static token
-2024-01-19 08:02:22,952 [INFO]: Shard ID None has connected to Gateway (Session ID: d1a0926077463fa61cd9d2eb5a6da9b6).
-2024-01-19 08:02:24,956 [INFO]: 
-
-
-2024-01-19 08:02:24,956 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:02:24,957 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:02:24,957 [INFO]: [32mReady.[0m
-2024-01-19 08:02:26,670 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:02:26,946 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:02:27,253 [INFO]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:02:47,576 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:02:47,577 [INFO]: logging in using static token
-2024-01-19 08:02:48,521 [INFO]: Shard ID None has connected to Gateway (Session ID: 95359d79ff31b0dcd8642a942e287a65).
-2024-01-19 08:02:50,525 [INFO]: 
-
-
-2024-01-19 08:02:50,525 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:02:50,526 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:02:50,526 [INFO]: [32mReady.[0m
-2024-01-19 08:02:52,139 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:02:52,356 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:02:52,604 [ERROR]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:03:09,443 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:03:09,638 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:03:44,351 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:03:44,352 [INFO]: logging in using static token
-2024-01-19 08:03:45,257 [INFO]: Shard ID None has connected to Gateway (Session ID: 6667d1d0af63fa836152675b5fb1b0bf).
-2024-01-19 08:03:47,285 [INFO]: 
-
-
-2024-01-19 08:03:47,285 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:03:47,286 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:03:47,286 [INFO]: [32mReady.[0m
-2024-01-19 08:03:50,518 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:03:50,907 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:04:22,564 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:04:22,565 [INFO]: logging in using static token
-2024-01-19 08:04:23,447 [INFO]: Shard ID None has connected to Gateway (Session ID: 410f345ed5672a88a277d86db94ea4f3).
-2024-01-19 08:04:25,457 [INFO]: 
-
-
-2024-01-19 08:04:25,457 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:04:25,458 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:04:25,458 [INFO]: [32mReady.[0m
-2024-01-19 08:04:28,558 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:04:28,762 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:05:35,904 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:05:35,905 [INFO]: logging in using static token
-2024-01-19 08:05:36,736 [INFO]: Shard ID None has connected to Gateway (Session ID: 61b583591307e2c511d0731fa5dae2dc).
-2024-01-19 08:05:38,740 [INFO]: 
-
-
-2024-01-19 08:05:38,740 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:05:38,740 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:05:38,741 [INFO]: [32mReady.[0m
-2024-01-19 08:05:41,640 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:05:41,838 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:05:56,586 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:05:57,158 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:11:49,139 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:11:49,140 [INFO]: logging in using static token
-2024-01-19 08:11:49,986 [INFO]: Shard ID None has connected to Gateway (Session ID: 3d08090e8be4f1bc8c9af04a33b7dd28).
-2024-01-19 08:11:51,989 [INFO]: 
-
-
-2024-01-19 08:11:51,989 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:11:51,989 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:11:51,990 [INFO]: [32mReady.[0m
-2024-01-19 08:11:55,128 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:11:55,442 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:11:55,443 [INFO]: [32mJoined new_name:
-    [0mnew_name: "[93mpizza[0m"
-2024-01-19 08:11:55,566 [WARNING]: We are being rate limited. PATCH https://discord.com/api/v10/channels/1197916180237783072 responded with 429. Retrying in 226.78 seconds.
-2024-01-19 08:12:33,369 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:12:33,370 [INFO]: logging in using static token
-2024-01-19 08:12:34,695 [INFO]: Shard ID None has connected to Gateway (Session ID: b8d2323d108f4db5b40abf24ab57d2ed).
-2024-01-19 08:12:36,698 [INFO]: 
-
-
-2024-01-19 08:12:36,698 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:12:36,698 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:12:36,698 [INFO]: [32mReady.[0m
-2024-01-19 08:12:42,643 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:12:42,925 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:12:42,925 [INFO]: [32mJoined new_name:
-    [0mnew_name: "[93mpizza[0m"
-2024-01-19 08:12:43,081 [WARNING]: We are being rate limited. PATCH https://discord.com/api/v10/channels/1197916180237783072 responded with 429. Retrying in 179.27 seconds.
-2024-01-19 08:13:09,340 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:13:09,614 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:09,982 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197725433068781598[0m, mmessage_id:1197916180237783072[0m
-2024-01-19 08:13:10,945 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:13:11,156 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 08:13:15,953 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 08:13:16,160 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:16,160 [INFO]: [32mGrabbed author's name:
-    [93mDiabolicalGolem[0m
-2024-01-19 08:13:16,160 [INFO]: [32mFound channel path:
-    [93mdnd-bot[0m
-2024-01-19 08:13:16,423 [INFO]: [32mSent anchoring message:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:13:16,696 [INFO]: [32mSet thread title:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:13:16,943 [INFO]: [32mSent welcome text.[0m
-2024-01-19 08:13:22,642 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:13:23,134 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:23,134 [INFO]: [32mJoined new_name:
-    [0mnew_name: "[93mpizza[0m"
-2024-01-19 08:13:23,643 [INFO]: [32mChanged thread name to new_name[0m
-2024-01-19 08:13:28,062 [INFO]: [32mServed success message.[0m
-2024-01-19 08:13:37,693 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:13:37,919 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:38,292 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197725433068781598[0m, mmessage_id:1197921728182112316[0m
-2024-01-19 08:13:38,729 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:13:38,900 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 08:13:42,522 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 08:13:42,752 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:42,752 [INFO]: [32mGrabbed author's name:
-    [93mDiabolicalGolem[0m
-2024-01-19 08:13:42,752 [INFO]: [32mFound channel path:
-    [93mdnd-bot[0m
-2024-01-19 08:13:43,078 [INFO]: [32mSent anchoring message:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:13:43,836 [INFO]: [32mSet thread title:
-    [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:13:44,051 [INFO]: [32mSent welcome text.[0m
-2024-01-19 08:13:53,813 [INFO]: [93mdiabolicalgolem[0m issued: [36mintegrationhelp[0m
-2024-01-19 08:13:54,158 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:13:54,421 [INFO]: [32mSent the embed.[0m
-2024-01-19 08:14:00,649 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 08:14:00,904 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:00,904 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 08:14:01,124 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 08:14:01,443 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 08:14:14,256 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 08:14:14,455 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:14,455 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 08:14:14,702 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 08:14:14,946 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 08:14:22,230 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 08:14:22,663 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:22,663 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[][0m
-2024-01-19 08:14:22,946 [ERROR]: [31mAborted: un_dm;
-    [93mdiabolicalgolem [31mis not DM.[0m
-2024-01-19 08:14:27,913 [INFO]: [32mServed failure message.[0m
-2024-01-19 08:14:28,710 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 08:14:28,999 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:29,000 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 08:14:29,169 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 08:14:29,365 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 08:14:32,092 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 08:14:32,289 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:32,289 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 08:14:32,514 [ERROR]: [31mAborted: claim_dm;
-    [93mdiabolicalgolem [31malready is DM.[0m
-2024-01-19 08:14:39,816 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 08:14:40,094 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:14:40,095 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 08:14:40,362 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 08:14:40,556 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 08:16:08,542 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:16:08,543 [INFO]: logging in using static token
-2024-01-19 08:16:10,091 [INFO]: Shard ID None has connected to Gateway (Session ID: 6aa820e2e4cb06178f0646b35bce418e).
-2024-01-19 08:16:12,097 [INFO]: 
-
-
-2024-01-19 08:16:12,097 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:16:12,098 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:16:12,098 [INFO]: [32mReady.[0m
-2024-01-19 08:16:19,499 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:16:19,703 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:16:20,058 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197725433068781598[0m, mmessage_id:1197921839842869398[0m
-2024-01-19 08:16:20,779 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:16:21,119 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 08:16:26,446 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:16:26,718 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:16:27,256 [ERROR]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:16:31,688 [INFO]: [32mServed failure message.[0m
-2024-01-19 08:19:04,423 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:19:04,424 [INFO]: logging in using static token
-2024-01-19 08:19:05,430 [INFO]: Shard ID None has connected to Gateway (Session ID: 4332ad8fab30dfa0f2b9246e632006dd).
-2024-01-19 08:19:07,433 [INFO]: 
-
-
-2024-01-19 08:19:07,433 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:19:07,434 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:19:07,434 [INFO]: [32mReady.[0m
-2024-01-19 08:19:29,019 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:19:29,020 [INFO]: logging in using static token
-2024-01-19 08:19:29,941 [INFO]: Shard ID None has connected to Gateway (Session ID: 3deb62698ba1d8dd642e7043b3f2cdce).
-2024-01-19 08:19:31,535 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 08:19:31,943 [INFO]: 
-
-
-2024-01-19 08:19:31,944 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:19:31,944 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:19:31,945 [INFO]: [32mReady.[0m
-2024-01-19 08:19:32,189 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:19:32,189 [INFO]: [32mGrabbed author's name:
-    [93mDiabolicalGolem[0m
-2024-01-19 08:19:32,189 [INFO]: [32mFound channel path:
+2024-01-19 12:45:41,814 [INFO]: [32mFound channel path:
     [93mgameplay[0m
-2024-01-19 08:19:32,421 [INFO]: [32mSent anchoring message:
+2024-01-19 12:45:42,083 [INFO]: [32mSent anchoring message:
     [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:19:32,818 [INFO]: [32mSet thread title:
+2024-01-19 12:45:42,462 [INFO]: [32mSet thread title:
     [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:19:33,141 [INFO]: [32mSent welcome text.[0m
-2024-01-19 08:19:38,993 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:19:39,195 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:19:43,987 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:19:52,712 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:19:52,909 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:19:53,122 [ERROR]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:19:57,490 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:20:25,856 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:20:25,857 [INFO]: logging in using static token
-2024-01-19 08:20:27,222 [INFO]: Shard ID None has connected to Gateway (Session ID: dfe7c714313ac853b0118ccf29a36c64).
-2024-01-19 08:20:29,260 [INFO]: 
-
-
-2024-01-19 08:20:29,260 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:20:29,261 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:20:29,261 [INFO]: [32mReady.[0m
-2024-01-19 08:20:30,697 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:20:30,861 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:20:35,445 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:20:42,518 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:20:42,813 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:20:43,082 [ERROR]: [31mAborted: dndren;
-    [93mdiabolicalgolem [31missued command without new_name.[0m
-2024-01-19 08:20:47,484 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:21:25,851 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:21:25,853 [INFO]: logging in using static token
-2024-01-19 08:21:31,542 [INFO]: Shard ID None has connected to Gateway (Session ID: 2d0b9cdbe78819c2b35e80fc09eecf86).
-2024-01-19 08:21:33,547 [INFO]: 
-
-
-2024-01-19 08:21:33,547 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:21:33,547 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:21:33,548 [INFO]: [32mReady.[0m
-2024-01-19 08:21:37,073 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:21:37,382 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:21:42,596 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:21:54,382 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:21:54,383 [INFO]: logging in using static token
-2024-01-19 08:21:55,409 [INFO]: Shard ID None has connected to Gateway (Session ID: e6f932c63f62da4799089bd93f18a10b).
-2024-01-19 08:21:57,413 [INFO]: 
-
-
-2024-01-19 08:21:57,413 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:21:57,414 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:21:57,414 [INFO]: [32mReady.[0m
-2024-01-19 08:21:58,441 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
-2024-01-19 08:21:58,741 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:22:03,541 [INFO]: [31mServed failure message.[0m
-2024-01-19 08:27:39,074 [WARNING]: PyNaCl is not installed, voice will NOT be supported
-2024-01-19 08:27:39,075 [INFO]: logging in using static token
-2024-01-19 08:27:50,242 [INFO]: Shard ID None has connected to Gateway (Session ID: 4a400fbafe392acfa516a7cac0a621a4).
-2024-01-19 08:27:51,427 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:27:51,653 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:27:51,991 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197923305349451906[0m
-2024-01-19 08:27:52,247 [INFO]: 
-
-
-2024-01-19 08:27:52,248 [INFO]: [93m"Avrae Integration (DoW)#5572"[32m is connected to the following guild:
-    [93m"DMs Adventures"[32m (id: [93m1197704507879075860[32m)[0m
-2024-01-19 08:27:52,248 [INFO]: [32mChanged bot presence.[0m
-2024-01-19 08:27:52,249 [INFO]: [32mReady.[0m
-2024-01-19 08:27:52,372 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:27:52,685 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 08:27:57,227 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 08:27:57,412 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:27:57,412 [INFO]: [32mGrabbed author's name:
+2024-01-19 12:45:42,681 [INFO]: [32mSent welcome text.[0m
+2024-01-19 12:45:51,304 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
+2024-01-19 12:45:51,604 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:45:51,993 [INFO]: [32mGrabbed anchor message source:
+    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197990286647894017[0m
+2024-01-19 12:45:52,305 [INFO]: [32mDeleted thread.[0m
+2024-01-19 12:45:52,524 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:45:56,480 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
+2024-01-19 12:45:56,726 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:45:57,146 [INFO]: [32mGrabbed anchor message source:
+    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197946281977462804[0m
+2024-01-19 12:45:57,620 [INFO]: [32mDeleted thread.[0m
+2024-01-19 12:45:57,809 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:46:03,129 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
+2024-01-19 12:46:03,362 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:46:03,753 [INFO]: [32mGrabbed anchor message source:
+    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197946277107863644[0m
+2024-01-19 12:46:04,110 [INFO]: [32mDeleted thread.[0m
+2024-01-19 12:46:04,358 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:46:21,332 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
+2024-01-19 12:46:21,775 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:46:22,306 [INFO]: [32mGrabbed anchor message source:
+    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197946272007589969[0m
+2024-01-19 12:46:22,623 [INFO]: [32mDeleted thread.[0m
+2024-01-19 12:46:22,843 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:46:28,752 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
+2024-01-19 12:46:29,106 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:46:29,596 [INFO]: [32mGrabbed anchor message source:
+    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197946265309286551[0m
+2024-01-19 12:46:29,884 [INFO]: [32mDeleted thread.[0m
+2024-01-19 12:46:30,259 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:46:43,446 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
+2024-01-19 12:46:43,688 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:46:43,688 [INFO]: [32mGrabbed author's name:
     [93mDiabolicalGolem[0m
-2024-01-19 08:27:57,412 [INFO]: [32mFound channel path:
+2024-01-19 12:46:43,688 [INFO]: [32mFound channel path:
     [93mgameplay[0m
-2024-01-19 08:27:57,612 [INFO]: [32mSent anchoring message:
+2024-01-19 12:46:43,934 [INFO]: [32mSent anchoring message:
     [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:27:57,866 [INFO]: [32mSet thread title:
+2024-01-19 12:46:44,264 [INFO]: [32mSet thread title:
     [93mDiabolicalGolem's Thread:[0m
-2024-01-19 08:27:58,040 [INFO]: [32mSent welcome text.[0m
-2024-01-19 08:28:06,742 [INFO]: [93mdiabolicalgolem[0m issued: [36mintegrationhelp[0m
-2024-01-19 08:28:06,941 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:07,285 [INFO]: [32mSent the embed.[0m
-2024-01-19 08:28:15,410 [INFO]: [93mdiabolicalgolem [0missued: [36mclaim_dm[0m
-2024-01-19 08:28:15,610 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:15,611 [INFO]: [32mGrabbed role info:
-    [0mclaiming_user: [93mdiabolicalgolem    [0mcurrent_dm: [93mNone[0m
-2024-01-19 08:28:15,774 [INFO]: [32mRemoved claiming_user "Player" role.[0m
-2024-01-19 08:28:15,983 [INFO]: [32mGave claiming_user "DM" role.[0m
-2024-01-19 08:28:26,690 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:28:26,942 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:27,393 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197925424253112320[0m
-2024-01-19 08:28:27,649 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:28:27,898 [INFO]: [32mDeleted anchor message.[0m
-2024-01-19 08:28:33,950 [INFO]: [93mdiabolicalgolem [0missued: [36mdnd[0m
-2024-01-19 08:28:34,216 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:34,216 [INFO]: [32mGrabbed author's name:
-    [93mDiabolicalGolem[0m
-2024-01-19 08:28:34,216 [INFO]: [32mFound channel path:
-    [93mgameplay[0m
-2024-01-19 08:28:34,435 [INFO]: [32mSent anchoring message:
-    [93mTaco Bell[0m
-2024-01-19 08:28:34,715 [INFO]: [32mSet thread title:
-    [93mTaco Bell[0m
-2024-01-19 08:28:35,017 [INFO]: [32mSent welcome text.[0m
-2024-01-19 08:28:44,317 [INFO]: [93mdiabolicalgolem[0m issued: [36mintegrationhelp[0m
-2024-01-19 08:28:44,644 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:44,836 [INFO]: [32mSent the embed.[0m
-2024-01-19 08:28:56,525 [INFO]: [93mdiabolicalgolem [0missued: [36mun_dm[0m
-2024-01-19 08:28:56,810 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:28:56,811 [INFO]: [32mGrabbed role info:
-    [0munclaiming_user: [93mdiabolicalgolem    [0mdm_members: [93m[<Member id=1044811175256399913 name='diabolicalgolem' global_name='DiabolicalGolem' bot=False nick=None guild=<Guild id=1197704507879075860 name='DMs Adventures' shard_id=0 chunked=True member_count=3>>][0m
-2024-01-19 08:28:57,110 [INFO]: [32mRemoved current_dm "DM" role.[0m
-2024-01-19 08:28:57,338 [INFO]: [32mGave current_dm "Player" role.[0m
-2024-01-19 08:29:01,317 [INFO]: [93mdiabolicalgolem [0missued: [36mdndend[0m
-2024-01-19 08:29:01,556 [INFO]: [32mDeleted issuing command.[0m
-2024-01-19 08:29:01,982 [INFO]: [32mGrabbed anchor message source:
-    [0mchannel_id:[93m1197872302939971644[0m, mmessage_id:1197925578729328722[0m
-2024-01-19 08:29:02,313 [INFO]: [32mDeleted thread.[0m
-2024-01-19 08:29:02,767 [INFO]: [32mDeleted anchor message.[0m
+2024-01-19 12:46:44,466 [INFO]: [32mSent welcome text.[0m
+2024-01-19 12:46:54,357 [INFO]: [93mdiabolicalgolem [0missued: [36mdndren[0m
+2024-01-19 12:46:54,603 [INFO]: [32mDeleted issuing command.[0m
+2024-01-19 12:46:54,603 [INFO]: [32mJoined new_name:
+    [0mnew_name: "[93mtest[0m"
+2024-01-19 12:46:55,445 [INFO]: [32mChanged thread name to new_name[0m
+2024-01-19 12:46:59,903 [INFO]: [32mServed success message.[0m
