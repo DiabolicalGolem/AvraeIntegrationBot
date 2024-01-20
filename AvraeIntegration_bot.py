@@ -41,6 +41,14 @@ async def on_ready():
     logging.info("[32mReady.[0m")
 
 @bot.event
+async def on_member_join(member):
+    logging.info(f"[93m{member.display_name}[0m has joined.[0m")
+
+    player_role = discord.utils.get(member.guild.roles, name="Player")
+    await member.add_roles(player_role)
+    logging.info("[32mMade them \"Player\" role.[0m")
+
+@bot.event
 async def on_command_error(ctx, error):
     # Ignore unknown commands
     if isinstance(error, commands.CommandNotFound):
@@ -167,6 +175,7 @@ async def dnd_thread(ctx,*args):
     await thread.send(
         f"Hi {name}!\n"
         "Use `!help` to see how to use the D&D bot, Avrae.\n"
+        "`!integrationhelp` shows the Avrae Integration bot help.\n"
         "You can use `!dndend` to delete this thread."
     )
     logging.info("[32mSent welcome text.[0m")
@@ -213,6 +222,7 @@ async def dnd_rename(ctx,*args):
     await ctx.message.delete()  # Clear the issuing command
     logging.info("[32mDeleted issuing command.[0m")
 
+
     if not isinstance(ctx.channel, discord.Thread):
         message = await ctx.send("You can only use `!dndren` in a thread.")
         async with ctx.typing():
@@ -242,13 +252,8 @@ async def dnd_rename(ctx,*args):
     )
 
     await ctx.channel.edit(name=new_name)
-    message = await ctx.send(f"Thread renamed to \"{new_name}\"")
     logging.info("[32mChanged thread name to new_name[0m")
-    async with ctx.typing():
-        await asyncio.sleep(4)
-        await message.delete()
-        logging.info("[32mServed success message.[0m")
-
+    
 @bot.command(name="undm",description="Returns the current DM to the role of \"Player\".")
 async def unclaim_dm(ctx):
     logging.info(f"[93m{ctx.author} [0missued: [36mun_dm[0m")
